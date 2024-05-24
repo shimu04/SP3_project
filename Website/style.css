@@ -1,0 +1,330 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff; /* Default color for navigation links */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    background-color: #147885; /* Background color for the button */
+    border-radius: 20px; /* Semi-rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+}
+
+.nav-links ul li a:hover {
+    background-color: #0d4851; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly scale up the button on hover */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a55a7;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #187d9b;
+    transform: scale(1.05);
+}
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #9cafbb;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0c3561;
+    transform: scale(1.05);
+}
+
+/* Section styles */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Homepage-specific styles */
+/* Homepage-specific styles */
+.homepage {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+}
+
+.homepage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150vh; /* Adjust the height as needed */
+    background-image: url('Images/med3.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.homepage .nav-links ul li a {
+    color: #fff;
+}
+.homepage .text-box {
+    position: absolute;
+    z-index: 1;
+    animation: fadeInUp 1s ease forwards; /* Apply fadeInUp animation */
+}
+
+.homepage .text-box {
+    position: relative;
+    margin-top: 20%; /* Adjust the margin as needed */
+    z-index: 1;
+    opacity: 0; /* Start with opacity 0 for animation */
+    animation: fadeInUp 2s ease forwards; /* Apply fadeInUp animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px); /* Start animation from 50px below */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+        transform: translateY(0); /* Move element to its original position */
+        opacity: 1; /* Set opacity to 1 */
+    }
+}
+
+
+/* About page styles */
+.about {
+    background-image: url('Images/med3.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Services page styles */
+.services {
+    background-image: url('Images/med3.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Reviews page styles */
+.reviews {
+    background-image: url('Images/med3.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+/* Contact page styles */
+.contact {
+    background-image: url('Images/med1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+* Book appointment page styles */
+.book-appointment {
+    background-image: url('Images/appointment-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.book-appointment .appointment-section {
+    position: relative;
+    z-index: 1;
+}
+
+.book-appointment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+.book-appointment h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.book-appointment p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Appointment step page styles */
+.appointment-step {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 50px 20px;
+}
+
+.appointment-step-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.appointment-step h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.appointment-step p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.appointment-step .form-group {
+    margin-bottom: 20px;
+}
+
+.appointment-step label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.appointment-step select,
+.appointment-step input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.appointment-step button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment-step button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+/* Payment page styles */
+.payment {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 50px 20px;
+}
+
+.payment-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.payment h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.payment p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.payment .form-group {
+    margin-bottom: 20px;
+}
+
+.payment label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.payment input[type="text"],
+.payment input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment button {
+    display: block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.payment button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}

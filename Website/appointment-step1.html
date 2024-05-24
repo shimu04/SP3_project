@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSyncPro - Appointment Step 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="appointment-step">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt="HealthSyncPro Logo"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="reviews.html">REVIEWS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="appointment-step-section">
+            <h2>What do you wish to speak to your Partner Practitioner about today?</h2>
+            <p>Please note that for every consultation you will only be able to discuss a single issue.</p>
+            <form action="appointment-step2.html">
+                <label><input type="radio" name="issue" value="Advice / Information"> Advice / Information</label><br>
+                <label><input type="radio" name="issue" value="Medical Certificate"> Medical Certificate</label><br>
+                <label><input type="radio" name="issue" value="Specialist Referral"> Specialist Referral</label><br>
+                <label><input type="radio" name="issue" value="Prescription - Taken before"> Prescription - Taken before</label><br>
+                <label><input type="radio" name="issue" value="Prescription - NOT taken before"> Prescription - NOT taken before</label><br>
+                <label><input type="radio" name="issue" value="Dermatology"> Dermatology</label><br>
+                <label><input type="radio" name="issue" value="Weight Loss"> Weight Loss</label><br>
+                <label><input type="radio" name="issue" value="Radiology / Imaging Referral"> Radiology / Imaging Referral</label><br>
+                <label><input type="radio" name="issue" value="Blood / Pathology Test"> Blood / Pathology Test</label><br>
+                <label><input type="radio" name="issue" value="Results Discussion / Follow-up"> Results Discussion / Follow-up</label><br>
+                <label><input type="radio" name="issue" value="Other"> Other</label><br>
+                <button type="submit" class="btn">Continue</button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
